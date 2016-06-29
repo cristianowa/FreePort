@@ -5,7 +5,7 @@ import os
 import sys
 import tempfile
 def getpidport(port):
-    output = cmd("netstat -lnp | grep tcp |  grep 0.0.0.0:" + port)
+    output = cmd("netstat -lnp | grep tcp |  grep " + port)
     print output
     return re.findall("LISTEN *([0-9]*)/", output)[0]
 

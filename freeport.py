@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from commands import getoutput as cmd
 import re
 import os
